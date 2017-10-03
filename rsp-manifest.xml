@@ -6,7 +6,7 @@
 
   <default sync-j="4"/>
 
-  <project remote="script"       revision="master" name="rsp-yocto-setup"   path="."/>
+  <project remote="script"       revision="master" name="rsp-yocto-setup"   path="setup"/>
   <project remote="yocto"        revision="pyro"   name="poky"              path="sources/poky"/>
   <project remote="yocto"        revision="pyro"   name="meta-raspberrypi"  path="sources/meta-raspberrypi"/>
   <project remote="openembedded" revision="pyro"   name="meta-openembedded" path="sources/meta-openembedded"/>
