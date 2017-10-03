@@ -2,11 +2,13 @@
 <manifest>
   <remote	name ="yocto"        fetch="git://git.yoctoproject.org"/>
   <remote	name ="openembedded" fetch="git://git.openembedded.org"/>
+  <remote	name ="script"       fetch="git://github.com/wiwid84"/>
 
   <default sync-j="4"/>
 
-  <project remote="yocto"        revision="pyro" name="poky"              path="sources/poky"/>
-  <project remote="yocto"        revision="pyro" name="meta-raspberrypi"  path="sources/meta-raspberrypi"/>
-  <project remote="openembedded" revision="pyro" name="meta-openembedded" path="sources/meta-openembedded"/>
+  <project remote="script"       revision="master" name="rsp-yocto-setup"   path="."/>
+  <project remote="yocto"        revision="pyro"   name="poky"              path="sources/poky"/>
+  <project remote="yocto"        revision="pyro"   name="meta-raspberrypi"  path="sources/meta-raspberrypi"/>
+  <project remote="openembedded" revision="pyro"   name="meta-openembedded" path="sources/meta-openembedded"/>
 </manifest>
 
